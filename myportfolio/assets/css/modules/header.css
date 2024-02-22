@@ -1,0 +1,154 @@
+header {
+    /* background-color: red; */
+    z-index: var(--z-index-2);
+    backdrop-filter: var(--blur);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--height-nav);
+    border-bottom: var(--line-weight) solid var(--main-color);
+}
+
+header nav {
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    padding: 0 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+nav ul li a span {
+    display: block;
+    transition: .6s;
+    font-family: sans-serif;
+}
+
+nav ul li a:hover span {
+    transform: translateY(-100%);
+}
+
+nav ul li a::before {
+    font-family: serif;
+    font-style: italic;
+    font-weight: 500;
+    position: absolute;
+    content: attr(data-link-alt);
+    top: 100%;
+    opacity: 0;
+    transition: .6s;
+}
+
+nav ul li a:hover::before {
+    top: 0;
+    opacity: 1;
+}
+
+
+/* NAV RESPONSIVE */
+
+.nav-resp {
+    display: none;
+}
+
+.burger-menu {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.nav-resp ul p {
+    display: none;
+    cursor: pointer;
+}
+
+/* ==== */
+
+.nav-resp {
+    padding: 0 7%;
+}
+
+.nav-resp ul {
+    position: fixed;
+    z-index: var(--z-index-1);
+    background-color: var(--background);
+    /* background-color: red; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    transform: translateY(-100%);
+    transition: .4s;
+}
+
+.nav-resp ul li {
+    /* background-color: blue; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-resp ul li a {
+    /* background-color: orange; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.nav-resp ul p {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 3.5%;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.nav-resp ul li a:hover span {
+    transform: translateY(0);
+}
+
+.nav-resp ul li a::before {
+    top: 0;
+    opacity: 0;
+}
+
+.nav-resp ul li a:hover::before {
+    opacity: 0;
+}

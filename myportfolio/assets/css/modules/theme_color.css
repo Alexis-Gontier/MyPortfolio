@@ -1,0 +1,36 @@
+.theme-color {
+    z-index: var(--z-index-3);
+    /* background-color: red; */
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 200px;
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.theme-color .color {
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    transform: translateX(75%);
+}
+
+.theme-color .color:nth-child(1) {
+    background-color: #131313;
+    transition: .3s;
+}
+
+.theme-color .color:nth-child(2) {
+    background-color: #f04924;
+    transition: .5s;
+}
+
+.theme-color .color:nth-child(3) {
+    background-color: #6b9c9e;
+    transition: .7s;
+}

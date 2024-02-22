@@ -1,0 +1,103 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.about .left,
+.about .right {
+    width: 45%;
+}
+
+.about .left {
+    position: sticky;
+    top: 70px;
+    padding-top: 20vh;
+    padding-bottom: 25vh;
+}
+
+.about .left img {
+    border-radius: 50%;
+}
+
+.about .right {
+    z-index: var(--z-index3);
+    padding-top: 20vh;
+    padding-bottom: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7.5rem;
+}
+
+.about .right .card {
+    width: 100%;
+    border-radius: 25px;
+    padding: 40px;
+    background-color: var(--color-card);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+.about .right .card h4 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.about .right .card p {
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.about .right .card p span {
+    font-weight: 400;
+}
+
+.about .right .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+}
+
+.about .right .container .card,
+.about .right .container .tech .{
+    backdrop-filter: blur(10px);
+}
+
+.about .right .tech {
+    width: 50%;
+}
+
+.about .right .tech .tech-logo {
+    font-size: 2.3rem;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about .right .tech .tech-logo p {
+    font-size: 1.5rem;
+}
+
+.about .right .card .cv {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.about .right .center {
+    align-items: center;
+    width: 70%;
+    transition: .3s;
+}
+
+.about .right .center:hover {
+    transform: scale(1.1);
+}
