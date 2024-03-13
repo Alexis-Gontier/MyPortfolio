@@ -1,0 +1,1 @@
+console.log('Hey ! Je suis en recherche d\'un stage.');
