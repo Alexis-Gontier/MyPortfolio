@@ -1,0 +1,10 @@
+@media screen and (max-width:1300px) {
+    
+    header nav {
+        display: none;
+    }
+
+    .nav-resp {
+        display: flex;
+    }
+}

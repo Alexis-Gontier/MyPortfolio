@@ -1,0 +1,82 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: calc(var(--height-nav) + 40vh) 0 40vh;
+}
+
+.projects h3 {
+    z-index: -1;
+    font-size: 7rem;
+    font-weight: 500;
+    position: sticky;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.projects .container {
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+    padding-top: 50vh;
+    padding-bottom: 80vh;
+}
+
+.projects .container .card {
+    background-color: brown;
+    width: 1000px;
+    height: 550px;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.projects .container .card .card_content {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: 1s;
+    opacity: 0;
+}
+
+.projects .container .card .card_content h5 {
+    font-size: 3rem;
+    cursor: default;
+}
+
+.projects .container .card .card_content p {
+    font-size: 1.3rem;
+    text-align: center;
+    cursor: default;
+}
+
+.projects .container .card .card_content .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 4rem;
+}
+
+.projects .container .card .card_content .links a:hover {
+    color: rgb(216, 216, 216);
+}
+
+.projects .container .card:hover .card_content {
+    opacity: 1;
+}

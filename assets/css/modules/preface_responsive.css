@@ -1,0 +1,80 @@
+@media screen and (max-width: 1500px) {
+
+    .preface h1 {
+        font-size: 7rem;
+    }
+
+    .preface h1 span:first-child {
+        margin-right: 500px;
+    }
+    
+    .preface h1 span:last-child {
+        margin-left: 150px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    .social-networks,
+    .theme-color {
+        display: none;
+    }
+
+    .preface h1 {
+        font-size: 6rem;
+    }
+
+    .preface h1 span:first-child {
+        margin-right: 450px;
+    }
+    
+    .preface h1 span:last-child {
+        margin-left: 130px;
+    }
+
+    .preface h2 {
+        margin-right: 130px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .preface h1 {
+        font-size: 5rem;
+    }
+
+    .preface h1 span:first-child {
+        margin-right: 350px;
+    }
+    
+    .preface h1 span:last-child {
+        margin-left: 130px;
+    }
+
+    .preface h2 {
+        font-size: .8rem;
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .preface h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .preface h1 span:first-child {
+        margin-right: 0;
+    }
+    
+    .preface h1 span:last-child {
+        margin-left: 0;
+    }
+
+    .preface h2 {
+        font-size: .8rem;
+        margin-right: 0;
+        text-align: center;
+    }
+}
